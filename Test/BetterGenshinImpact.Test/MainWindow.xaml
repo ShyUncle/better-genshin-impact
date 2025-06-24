@@ -7,6 +7,7 @@
         Width="240"
         Height="450"
         mc:Ignorable="d">
+
     <Canvas>
         <Button Canvas.Left="10"
                 Canvas.Top="10"
@@ -86,5 +87,11 @@
                 VerticalAlignment="Center"
                 Click="CameraTest"
                 Content="新视角识别测试" />
+        <Button Canvas.Left="10"
+            Canvas.Top="278"
+            Width="100"
+            Height="23"
+            Click="DoOcrTest"
+            Content="文字识别" HorizontalAlignment="Center" VerticalAlignment="Top"   />
     </Canvas>
 </Window>

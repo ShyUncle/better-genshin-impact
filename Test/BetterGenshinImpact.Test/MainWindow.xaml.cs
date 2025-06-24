@@ -17,7 +17,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        Global.StartUpPath = @"D:\HuiPrograming\Projects\CSharp\MiHoYo\BetterGenshinImpact\BetterGenshinImpact\bin\x64\Debug\net8.0-windows10.0.22621.0";
+        //Global.StartUpPath = @"D:\HuiPrograming\Projects\CSharp\MiHoYo\BetterGenshinImpact\BetterGenshinImpact\bin\x64\Debug\net8.0-windows10.0.22621.0";
     }
 
     private void ShowCameraRecWindow(object sender, System.Windows.RoutedEventArgs e)
@@ -37,7 +37,7 @@ public partial class MainWindow : Window
 
     private void DoOcrTest(object sender, System.Windows.RoutedEventArgs e)
     {
-        OcrTest.TestYap();
+          OcrTest.TestYap() ;  
     }
 
     private void DoMatchTemplateTest(object sender, System.Windows.RoutedEventArgs e)
