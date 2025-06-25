@@ -18,7 +18,8 @@ public class OcrTest
 {
     public static void TestYap()
     {
-        var path = @"D:\daydayup\better-genshin-impact\BetterGenshinImpact\Assets\Model\PaddleOCR\0.png";
+        var path = @"D:\daydayup\better-genshin-impact\BetterGenshinImpact\Assets\Model\PaddleOCR\1.png";
+        path= @"D:\daydayup\better-genshin-impact\Test\BetterGenshinImpact.Test\Simple\4.jpg";
         //Mat mat = Cv2.ImRead(path);
         //var text = TextInferenceFactory.Pick.Inference(TextInferenceFactory.PreProcessForInference(mat));
         //Debug.WriteLine(text);
@@ -26,7 +27,7 @@ public class OcrTest
         var paddle = OcrFactory.Paddle;
         var text2 = paddle.Ocr(mat2);
         Debug.WriteLine(text2);
-
+        
         var fpath = @"D:\daydayup\better-genshin-impact\Test\BetterGenshinImpact.Test\Simple\f.jpg";
         var dpath = @"D:\daydayup\better-genshin-impact\Test\BetterGenshinImpact.Test\Simple\d.jpg";
         var roi = Cv2.ImRead(dpath);
@@ -36,7 +37,7 @@ public class OcrTest
         { 
             Cv2.Rectangle(roi, p, new OpenCvSharp.Point(p.X + template.Width, p.Y + template.Height), Scalar.Red, 2);
             Cv2.ImWrite("D:\\daydayup\\better-genshin-impact\\Test\\BetterGenshinImpact.Test\\Simple\\find.jpg", roi);
-            Cv2.ImShow("Match Result", roi);
+          //  Cv2.ImShow("Match Result", roi);
             Cv2.WaitKey();
         }
         else
